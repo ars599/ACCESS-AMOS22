@@ -18,8 +18,9 @@ Usage is detailed unger nci git. (NCI account needed)
 under wrap_ACCESS_Archiver.sh
 
 **1.  make sure the base outputs files
-- base_dir=/scratch/p66/tfl561/access-esm/archive
-
+---
+$ base_dir=/scratch/p66/tfl561/access-esm/archive
+---
 **2.  output directory
 - arch_dir=/g/data/p66/tfl561/ACCESS-ESM
  
