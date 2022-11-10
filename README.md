@@ -14,4 +14,34 @@ Usage is detailed unger nci git. (NCI account needed)
 - to convert UM format to netCDF
 - to move wrap data from archive to gdata (easy for OOD)
 
+** to do list **
+under wrap_ACCESS_Archiver.sh
 
+- make sure the base outputs files
+- base_dir=/scratch/p66/tfl561/access-esm/archive
+
+- output directory
+- arch_dir=/g/data/p66/tfl561/ACCESS-ESM
+ 
+- setup run type
+-  #access_version = [cm2, cm2amip, cm2chem, esmscript, esmpayu, om2]
+- old ESM k shell script
+- access_version=esmscript
+- now payu ESM
+- access_version=esmpayu
+ 
+- atm outputs need to convert to netCDF
+- #ncexists = [true, false]
+- #true: Copy netcdf version of file if it exists; false: Always use UM pp-file if it exists, whether or not netcdf version exists
+- ncexists=true
+ 
+- convert subdaily 3h 6h data ?
+- #subdaily = [true, false]; convert subdaily atm files?
+- subdaily=false
+ 
+- multiple job list
+- #loc_exps = list of local experiment names (stored in 'base_dir') to archive
+- loc_exps=(
+HI-00
+HI-02
+)
