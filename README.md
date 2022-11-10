@@ -9,6 +9,7 @@
 ** note ***
 Check out from Tammas Loughran:
 https://git.nci.org.au/tfl561/ACCESS-Archiver/-/tree/main
+Usage is detailed unger nci git. (NCI account needed)
 
 - to convert UM format to netCDF
 - to move wrap data from archive to gdata (easy for OOD)
