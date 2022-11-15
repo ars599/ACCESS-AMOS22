@@ -1,3 +1,19 @@
+# ACCESS Training (2020)
+
+** note ***
+https://confluence.csiro.au/display/ACCESS/ACCESS+Training
+
+**1. ACCESS-CM2 Training
+**2. ACCESS-ESM1.5 Training
+https://confluence.csiro.au/display/ACCESS/ACCESS-ESM1.5+Training
+
+**3. Setting up for ACCESS-ESM1.5
+https://confluence.csiro.au/display/ACCESS/Setting+up+for+ACCESS-ESM1.5
+
+**4. Archiver
+https://git.nci.org.au/cm2704/ACCESS-Archiver.git
+
+
 # ACCESS-ESM AMOS 2022 Usefull scripts
 
 ## conver the atmosphere output file name from Jan to 001 (not necessary) ...
