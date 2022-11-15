@@ -70,6 +70,19 @@ HI-02
 )
 ```
 # python scripts (analysis data)
+```
+HI-00 origin need to read all files and then save to a single variable file
+https://github.com/ars599/ACCESS-AMOS22/blob/main/scripts/plot_ts_concat_demo2.ipynb
 
 
+Now just use existing files:
+fn1 = 'sst_HI-00_output.nc'
+fn2 = 'sst_HI-02_output.nc'
+
+
+https://github.com/ars599/ACCESS-AMOS22/blob/main/scripts/plot_ts_concat_demo.ipynb
+
+
+
+```
 
