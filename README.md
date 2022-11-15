@@ -21,6 +21,11 @@ https://git.nci.org.au/cm2704/ACCESS-Archiver.git
 
   please use change_unext_esm_ars599.sh $job_id
 
+### xconv
+
+** location **
+/g/data/access/projects/access/apps/xconv/1.94/xconv
+
 ### ACCESS Archiver
 
 ** note ***
