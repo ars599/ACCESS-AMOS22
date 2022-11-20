@@ -28,13 +28,23 @@ https://git.nci.org.au/cm2704/ACCESS-Archiver.git
 
 ### ACCESS Archiver
 
-** note ***
+** note **
+```
 Check out from Tammas Loughran:
 https://git.nci.org.au/tfl561/ACCESS-Archiver/-/tree/main
 Usage is detailed unger nci git. (NCI account needed)
 
 - to convert UM format to netCDF
 - to move wrap data from archive to gdata (easy for OOD)
+```
+
+```
+alternately can use from:
+
+
+https://github.com/ars599/ACCESS-Archiver_tfl561
+
+```
 
 ** to do list **
 under wrap_ACCESS_Archiver.sh
