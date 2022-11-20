@@ -1,6 +1,7 @@
 # ACCESS Training (2020)
 
-** note ***
+** note **
+
 https://confluence.csiro.au/display/ACCESS/ACCESS+Training
 
 **1. ACCESS-CM2 Training
@@ -18,14 +19,14 @@ https://git.nci.org.au/cm2704/ACCESS-Archiver.git
 # ACCESS-ESM AMOS 2022 Usefull scripts
 
 ## conver the atmosphere output file name from Jan to 001 (not necessary) ...
-
+```
   please use change_unext_esm_ars599.sh $job_id
-
-### xconv
-
+```
+## xconv
 ** location **
+```
 /g/data/access/projects/access/apps/xconv/1.94/xconv
-
+```
 ### ACCESS Archiver
 
 ** note **
@@ -40,22 +41,25 @@ Usage is detailed unger nci git. (NCI account needed)
 
 ```
 alternately can use from:
-
-
 https://github.com/ars599/ACCESS-Archiver_tfl561
+
+It was based on tfl561, and modify to fit AMOS 2022 demo activity
 
 ```
 
 ** to do list **
+'''
 under wrap_ACCESS_Archiver.sh
-
+'''
 **1.  make sure the base outputs files
 ```
-base_dir=/scratch/p66/tfl561/access-esm/archive
+base_dir=/scratch/p66/ars599/access-esm/archive
+
 ```
 **2.  output directory
 ```
-arch_dir=/g/data/p66/tfl561/ACCESS-ESM
+arch_dir=/g/data/p66/ars599/archive/CMIP6/ACCESS-ESM1-5/
+
 ``` 
 **3.  setup run type
 ```
@@ -94,6 +98,8 @@ Now just use existing files:
 fn1 = 'sst_HI-00_output.nc'
 fn2 = 'sst_HI-02_output.nc'
 
+should copy to 
+/scratch/public/ars599
 
 https://github.com/ars599/ACCESS-AMOS22/blob/main/scripts/plot_ts_concat_demo.ipynb
 
