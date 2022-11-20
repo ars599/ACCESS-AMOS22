@@ -17,34 +17,34 @@ https://confluence.csiro.au/display/ACCESS/ACCESS-ESM1.5+Training
 **3. Setting up for ACCESS-ESM1.5
 https://confluence.csiro.au/display/ACCESS/Setting+up+for+ACCESS-ESM1.5
 
-```
-Please Please Please make sure you can git clone and run the ESM before the workshop!!!
-
-Read throught the instruction but git clone the following link:
-
-https://github.com/ars599/HI-DEMO
-
-This is the one particullary used for the training!!!
-
-```
-
-
 **4. Archiver
 https://git.nci.org.au/cm2704/ACCESS-Archiver.git
 
 
-# ACCESS-ESM AMOS 2022 Usefull scripts
+# AMOS ACCESS ESM Workshop 2022
 
-## conver the atmosphere output file name from Jan to 001 (not necessary) ...
+** note **
+Please Please Please make sure you can git clone and run the ESM before the workshop!!!
+
+**1. Read throught the instruction but git clone the following link:
+
+	https://github.com/ars599/HI-DEMO
+
+This is the one particullary used for the training!!!
+
+
+## ACCESS-ESM AMOS 2022 Usefull scripts
+
+**1. conver the atmosphere output file name from Jan to 001 (not necessary) ...
 ```
   please use change_unext_esm_ars599.sh $job_id
 ```
-## xconv
-** location **
-```
-/g/data/access/projects/access/apps/xconv/1.94/xconv
-```
-### ACCESS Archiver
+**2. xconv
+Download
+
+	/g/data/access/projects/access/apps/xconv/1.94/xconv
+
+**3. ACCESS Archiver
 
 ** note **
 ```
