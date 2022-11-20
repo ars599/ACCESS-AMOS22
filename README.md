@@ -65,62 +65,50 @@ It was based on tfl561, and modify to fit AMOS 2022 demo activity
 ```
 
 ** to do list **
-'''
 under wrap_ACCESS_Archiver.sh
-'''
+
 **1.  make sure the base outputs files
-```
-base_dir=/scratch/p66/ars599/access-esm/archive
+	base_dir=/scratch/p66/ars599/access-esm/archive
 
-```
 **2.  output directory
-```
-arch_dir=/g/data/p66/ars599/archive/CMIP6/ACCESS-ESM1-5/
+	arch_dir=/g/data/p66/ars599/archive/CMIP6/ACCESS-ESM1-5/
 
-``` 
 **3.  setup run type
-```
-#access_version = [cm2, cm2amip, cm2chem, esmscript, esmpayu, om2]
-old ESM k shell script
-access_version=esmscript
-now payu ESM
-access_version=esmpayu
-``` 
+	#access_version = [cm2, cm2amip, cm2chem, esmscript, esmpayu, om2]
+	old ESM k shell script
+	access_version=esmscript
+	now payu ESM
+	access_version=esmpayu
+
 **4.  atm outputs need to convert to netCDF
-```
-#ncexists = [true, false]
-#true: Copy netcdf version of file if it exists; false: Always use UM pp-file if it exists, whether or not netcdf version exists
-ncexists=true
-```
+	#ncexists = [true, false]
+	#true: Copy netcdf version of file if it exists; false: Always use UM pp-file if it exists, whether or not netcdf version exists
+	ncexists=true
+
 **5.  convert subdaily 3h 6h data ?
-```
-#subdaily = [true, false]; convert subdaily atm files?
-subdaily=false
-``` 
+	#subdaily = [true, false]; convert subdaily atm files?
+	subdaily=false
+
 **6.  multiple job list
-```
-#loc_exps = list of local experiment names (stored in 'base_dir') to archive
-loc_exps=(
-HI-00
-HI-02
-)
-```
+	#loc_exps = list of local experiment names (stored in 'base_dir') to archive
+	loc_exps=(
+	HI-00
+	HI-02
+	)
+
 # python scripts (analysis data)
-```
-HI-00 origin need to read all files and then save to a single variable file
-https://github.com/ars599/ACCESS-AMOS22/blob/main/scripts/plot_ts_concat_demo2.ipynb
+	HI-00 origin need to read all files and then save to a single variable file
+	https://github.com/ars599/ACCESS-AMOS22/blob/main/scripts/plot_ts_concat_demo2.ipynb
 
 
-Now just use existing files:
-fn1 = 'sst_HI-00_output.nc'
-fn2 = 'sst_HI-02_output.nc'
+	Now just use existing files:
+	fn1 = 'sst_HI-00_output.nc'
+	fn2 = 'sst_HI-02_output.nc'
 
-should copy to 
-/scratch/public/ars599
+	should copy to 
+	/scratch/public/ars599
 
-https://github.com/ars599/ACCESS-AMOS22/blob/main/scripts/plot_ts_concat_demo.ipynb
+	https://github.com/ars599/ACCESS-AMOS22/blob/main/scripts/plot_ts_concat_demo.ipynb
 
 
-
-```
 
