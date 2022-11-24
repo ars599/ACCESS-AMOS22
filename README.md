@@ -28,7 +28,7 @@ Please Please Please make sure you can git clone and run the ESM before the work
 
 **1. Read throught the instruction but git clone the following link:
 
-	https://github.com/ars599/HI-DEMO
+	https://github.com/ars599/PI-DEMO
 
 This is the one particullary used for the training!!!
 
@@ -120,4 +120,74 @@ It was based on tfl561, and modify to fit AMOS 2022 demo activity
 	https://github.com/ars599/ACCESS-AMOS22/blob/main/scripts/plot_ts_concat_demo.ipynb
 
 
+# Cheat sheet for PI-DEMO interactive run for ACCESS workshop 
 
+** Before submitting your job: 
+
+Login via ssh  
+```
+	ssh -X UserID@gadi.nci.org.au 
+```
+Need to switch project to nf33 (check with echo $PROJECT) 
+```
+	switchproj nf33 
+	echo $PROJECT 
+```
+Create and cd into /scratch/nf33/userid/access-esm (mkdir) 
+```
+	mkdir /scratch/nf33/UserID 
+	mkdir /scratch/nf33/UserID/access-esm 
+	cd /scratch/nf33/UserID/access-esm 
+```
+** Load modules  
+```
+	module use /g/data/hh5/public/modules 
+	module load conda/analysis3-unstable 
+```
+*** Checkout code git clone 
+```
+	git clone https://github.com/ars599/PI-DEMO 
+	cd PI-DEMO 
+```
+
+** Explain settings in config file (Tilo/Arnold to explain settings) 
+```
+	cat config.yml 
+```
+Also readme file, but please follow our instructions today 
+
+cat README.md 
+
+submit model simulation to queue 
+```
+	payu run 
+```
+** After submitting your job: 
+
+Check status of run 
+```
+	qstat -wau UserID 
+```
+** New folder (and link) will be created, contains output for 3 main components and coupler including information for each processor in atmosphere + copy of all configuration files (Tilo/Arnold to explain files and output in work folder) 
+
+/scratch/nf33/UserID/access-esm/work/PI-DEMO 
+
+cat /scratch/nf33/UserID/access-esm/work/PI-DEMO/atmosphere/atm.fort6.pe0 
+
+cat /scratch/nf33/UserID/access-esm/work/PI-DEMO/atmosphere/STASHC 
+
+** output files for atmoshpere created for monthly and daily output 
+
+aiihca.paa1jan and aiihca.pea1jan 
+
+New folder “archive” created when run complete, contains model output 
+
+/scratch/nf33/txz599/access-esm/archive/PI-DEMO/output000 
+
+** Look at monthly and daily output with xconv and/or ferret, convert one field to netcdf with xconv and then load with ferret (Tilo/Arnold to explain analysis of output) 
+```
+	module use ~access/modules 
+	module load xconv 
+	module load ferret 
+	xconv aiihca.paa1jan 
+```
