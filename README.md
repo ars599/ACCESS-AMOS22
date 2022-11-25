@@ -68,13 +68,13 @@ It was based on tfl561, and modify to fit AMOS 2022 demo activity
 
 **3-0. Modify under wrap_ACCESS_Archiver.sh
 
-**3-1.  make sure the base outputs files
+**3-1.  make sure the base outputs files (forexample user: ars599)
 ```
-	base_dir=/scratch/p66/ars599/access-esm/archive
+	base_dir=/scratch/nf33/ars599/access-esm/archive
 ```
 **3-2.  output directory
 ```
-	arch_dir=/g/data/p66/ars599/archive/CMIP6/ACCESS-ESM1-5/
+	arch_dir=/g/data/nf33/ars599/archive/CMIP6/ACCESS-ESM1-5/
 ```
 **3-3.  setup run type
 ```
@@ -83,8 +83,10 @@ It was based on tfl561, and modify to fit AMOS 2022 demo activity
 	access_version=esmscript
 	now payu ESM
 	access_version=esmpayu
+	
+	basic knowledge of the namelist file for each module
 ```
-**3-4.  atm outputs need to convert to netCDF
+**3-4.  atm outputs need to convert to netCDF (xconv can only deal with single file)
 ```
 	#ncexists = [true, false]
 	#true: Copy netcdf version of file if it exists; false: Always use UM pp-file if it exists, whether or not netcdf version exists
@@ -105,7 +107,7 @@ It was based on tfl561, and modify to fit AMOS 2022 demo activity
 ```
 # python scripts (analysis data)
 	HI-00 origin need to read all files and then save to a single variable file
-	https://github.com/ars599/ACCESS-AMOS22/blob/main/scripts/plot_ts_concat_demo2.ipynb
+	https://github.com/ars599/ACCESS-AMOS22/blob/main/scripts/plot_ts_concat_demo3.ipynb
 
 
 	Now just use existing files:
@@ -113,9 +115,11 @@ It was based on tfl561, and modify to fit AMOS 2022 demo activity
 	fn2 = 'sst_HI-02_output.nc'
 
 	The files have been copied to 
-	/g/data/p66/ars599/ACCESS10/sst_HI-00_output.nc
-	/g/data/p66/ars599/ACCESS10/sst_HI-02_output.nc
-
+	idir = '/g/data/access/access_amos22/archive/'
+	ext1 = idir+"sst_HI-00_output.nc"
+	ext2 = idir+"sst_HI-02_output.nc"
+	ext3 = idir+"pr_HI-00_output.nc"
+	ext4 = idir+"pr_HI-02_output.nc"
 
 	https://github.com/ars599/ACCESS-AMOS22/blob/main/scripts/plot_ts_concat_demo.ipynb
 
