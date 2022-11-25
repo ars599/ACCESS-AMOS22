@@ -191,3 +191,14 @@ New folder “archive” created when run complete, contains model output
 	module load ferret 
 	xconv aiihca.paa1jan 
 ```
+
+# Please finish the Survey and if you have any qestion please leave your concern at the following link
+
+** AMOS ACCESS ESM workhop discussion
+
+https://github.com/ars599/ACCESS-AMOS22/issues
+
+** AMOS ACCESS Survey
+
+![](https://github.com/ars599/ACCESS-AMOS/blob/main/SV_aXgl9K4raENaME6-qrcode.png)
+
