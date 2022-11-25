@@ -200,5 +200,5 @@ https://github.com/ars599/ACCESS-AMOS22/issues
 
 ** AMOS ACCESS Survey
 
-![](https://github.com/ars599/ACCESS-AMOS/blob/main/SV_aXgl9K4raENaME6-qrcode.png)
+![](https://github.com/ars599/ACCESS-AMOS22/blob/main/SV_aXgl9K4raENaME6-qrcode.png)
 
